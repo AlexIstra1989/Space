@@ -4,7 +4,52 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    &__title {
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+
     &__content {
         display: flex;
+        justify-content: space-between;
     }
+
+    &__box {
+        max-width: 600px;
+    }
+
+    &__box-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    &__box-subtitle {
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #036CCA;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    &__description-text {
+        margin-right: 50px;
+    }
+
+    &__table {
+        margin-bottom: 55px;
+    }
+
+    &__table-tr {
+        
+    }
+
+    &__table-td {
+        
+    }
+    
 }

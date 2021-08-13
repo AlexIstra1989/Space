@@ -46,6 +46,7 @@ button {
     border: none;
     background: transparent;
     cursor: pointer;
+    color: inherit;
 }
 
 button::-moz-focus-inner {
@@ -104,6 +105,12 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
 }
 
+.title {
+    font-family: "spaceagecyrillic";
+    font-size: 48px;
+    line-height: 48px;
+}
+
 .header {
     background-image: url("../images/background-header.png");
     background-size: cover;
@@ -128,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    /*padding: 75px 0 20px;*/
+    padding: 75px 0 20px;
 }
 
 .header__link-phone {
@@ -142,53 +149,60 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__content {
-    max-width: 620px;
+    max-width: 600px;
 }
 
 .header__title {
     font-family: "spaceagecyrillic";
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 20px;
 }
 
 .header__span {
-    display: block;
     font-size: 110px;
     line-height: 110px;
 }
 
 .header__wrap {
-    margin-bottom: 40px;
-}
-
-.header__wrap-text {
-    display: inline;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     font-size: 24px;
     line-height: 29px;
-    margin-right: 42px;
+    margin-bottom: 50px;
 }
 
 .header__btn-center {
     border: 1px solid #FFFFFF;
-    width: 600px;
-    height: 60px;
+    width: 100%;
     font-size: 24px;
     line-height: 29px;
+    text-align: center;
     text-transform: uppercase;
-    background: transparent;
-    color: #FFFFFF;
+    padding: 15px 10px;
 }
 
-.header__box {
+.header__description {
     display: -ms-flexbox;
     display: flex;
-    max-width: 165px;
-    padding-bottom: 145px;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: 5%;
 }
 
-.header__text {
+.header__description-text {
     font-size: 14px;
     line-height: 17px;
+    max-width: 165px;
+    margin-right: 50px;
+}
+
+.header__description-text:last-child {
+    margin-right: 0;
 }
 
 .conteiner {
@@ -223,4 +237,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu__item-link:hover {
     color: red;
+}
+
+.about {
+    background-image: url("../images/background-about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about__content {
+    display: -ms-flexbox;
+    display: flex;
 }
