@@ -1,0 +1,17 @@
+.header {
+    background-image: url("../images/background-header.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;   
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 126px;
+    }
+
+    &__navigation {
+        display: flex;
+    }
+}
