@@ -1,0 +1,27 @@
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__item{
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__item-link {
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        transition: color .5s;
+        -webkit-transition: color .5s;
+        -moz-transition: color .5s;
+        -ms-transition: color .5s;
+        -o-transition: color .5s;
+        &:hover {
+            color: red;
+        }
+    }
+}
+

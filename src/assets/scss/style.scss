@@ -21,14 +21,15 @@ body{
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font-family: "SF Pro Display", monospace;
+    font-family: "sf-pro-display", monospace;
+    font-weight: 400;
     color: #fff;
 }
 
 input,button,textarea{font-family: inherit;}
 
 input::-ms-clear{display: none;}
-button{cursor: pointer;}
+button{border: none; background: transparent; cursor: pointer; color: inherit;}
 button::-moz-focus-inner{padding: 0;border: 0;}
 a,a :visited{text-decoration: none;}
 a :hover{text-decoration: none;}
@@ -37,6 +38,10 @@ a{font-family: inherit; color: inherit; font-size: inherit;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
+@import "./fonts";
+@import "./title";
 @import "./header";
 @import "./conteiner";
+@import "./menu";
 @import "./about";
+
