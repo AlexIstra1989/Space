@@ -1,31 +1,42 @@
 .about {
-    background-image: url("../images/background-about.jpg");
+    background-image: url("../images/about-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     &__title {
-        padding-top: 100px;
-        margin-bottom: 100px;
+        padding: 100px 0;
     }
 
     &__content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 150px;
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
     }
 
     &__box {
-        max-width: 600px;
+        width: 600px;
     }
 
     &__box-title {
         font-size: 30px;
         line-height: 36px;
+        font-weight: 700;
+        margin-bottom: 5px;
     }
 
     &__box-subtitle {
         font-size: 12px;
         line-height: 14px;
+        font-weight: 400;
         text-transform: uppercase;
         color: #036CCA;
         margin-bottom: 30px;
@@ -33,23 +44,48 @@
 
     &__description {
         display: flex;
+        justify-content: space-between;
         margin-bottom: 50px;
     }
 
     &__description-text {
-        margin-right: 50px;
+        width: 165px;
     }
 
     &__table {
-        margin-bottom: 55px;
+        border-collapse: collapse;
+        margin-bottom: 50px;
     }
 
     &__table-tr {
-        
+        border: 1px solid #fff;
+        border-left: none;
+        border-right: none;
+    }
+
+    &__table-tr + &__table-tr {
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        font-weight: 700;
     }
 
     &__table-td {
-        
+        padding: 10px 30px 10px 0;
+    }
+
+    &__table-td span {
+        font-size: 14px;
+        line-height: 17px;
+        display: block;
+    }
+
+    &__note {
+        caption-side: bottom;
+        text-align: left;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 20px;
     }
     
 }

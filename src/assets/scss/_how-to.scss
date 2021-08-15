@@ -1,0 +1,41 @@
+.how-to {
+    background-image: url("../images/how-to-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 100px 0;
+
+    &__title {
+        max-width: 578px;
+    }
+
+    &__box {
+        text-align: center;
+    }
+
+    &__box circle,
+    &__box text {
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        font-size: 18px;
+        }
+
+    &__box g:hover circle{
+        r: 20px;
+        fill: blue;
+    }
+
+    &__box g:hover text{
+        fill: blue;
+        font-size: 36px;
+    }
+
+
+
+
+
+}
+

@@ -109,10 +109,32 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "spaceagecyrillic";
     font-size: 48px;
     line-height: 48px;
+    font-weight: 400;
+}
+
+.title {
+    font-family: "spaceagecyrillic";
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+.btn {
+    font-size: 18px;
+    line-height: 21px;
+    width: 50%;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 165px;
 }
 
 .header {
-    background-image: url("../images/background-header.png");
+    background-image: url("../images/header-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -240,13 +262,66 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about {
-    background-image: url("../images/background-about.jpg");
+    background-image: url("../images/about-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.about__title {
+    padding: 100px 0;
+}
+
 .about__content {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+.about__about__img {
+    max-width: 100%;
+}
+
+.about__box {
+    max-width: 600px;
+}
+
+.about__box-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.about__box-subtitle {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #036CCA;
+    margin-bottom: 30px;
+}
+
+.about__description {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.about__description-text {
+    max-width: 165px;
+}
+
+.about__table {
+    margin-bottom: 55px;
+}
+
+.about__table-tr {
+    border-top: 1px solid #fff;
 }

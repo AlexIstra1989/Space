@@ -1,7 +1,6 @@
 * {
   padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
+  margin: 0; }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -90,19 +89,20 @@ h1, h2, h3, h4, h5, h6 {
 .title {
   font-family: "spaceagecyrillic";
   font-size: 48px;
-  line-height: 48px; }
+  line-height: 48px;
+  font-weight: 400; }
 
 .title {
   font-family: "spaceagecyrillic";
   font-size: 48px;
-  line-height: 48px; }
+  line-height: 48px;
+  font-weight: 400; }
 
 .btn {
   font-size: 18px;
   line-height: 21px;
-  width: 50%;
   border: 1px solid #fff;
-  padding: 20px 10px; }
+  padding: 20px 45px; }
 
 .text {
   font-size: 16px;
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 165px; }
 
 .header {
-  background-image: url("../images/background-header.png");
+  background-image: url("../images/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -193,33 +193,89 @@ h1, h2, h3, h4, h5, h6 {
     color: red; }
 
 .about {
-  background-image: url("../images/background-about.jpg");
+  background-image: url("../images/about-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   .about__title {
-    padding-top: 100px;
-    margin-bottom: 100px; }
+    padding: 100px 0; }
   .about__content {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 150px; }
+    .about__content:nth-child(odd) {
+      flex-direction: row-reverse; }
+  .about__img {
+    max-width: 100%; }
   .about__box {
-    max-width: 600px; }
+    width: 600px; }
   .about__box-title {
     font-size: 30px;
-    line-height: 36px; }
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 5px; }
   .about__box-subtitle {
     font-size: 12px;
     line-height: 14px;
+    font-weight: 400;
     text-transform: uppercase;
     color: #036CCA;
     margin-bottom: 30px; }
   .about__description {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 50px; }
   .about__description-text {
-    margin-right: 50px; }
+    width: 165px; }
   .about__table {
-    margin-bottom: 55px; }
+    border-collapse: collapse;
+    margin-bottom: 50px; }
+  .about__table-tr {
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none; }
+  .about__table-tr + .about__table-tr {
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    font-weight: 700; }
+  .about__table-td {
+    padding: 10px 30px 10px 0; }
+  .about__table-td span {
+    font-size: 14px;
+    line-height: 17px;
+    display: block; }
+  .about__note {
+    caption-side: bottom;
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 20px; }
+
+.how-to {
+  background-image: url("../images/how-to-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 100px 0; }
+  .how-to__title {
+    max-width: 578px; }
+  .how-to__box {
+    text-align: center; }
+  .how-to__box circle,
+  .how-to__box text {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    font-size: 18px; }
+  .how-to__box g:hover circle {
+    r: 20px;
+    fill: blue; }
+  .how-to__box g:hover text {
+    fill: blue;
+    font-size: 36px; }
 
 /*# sourceMappingURL=style.min.css.map */
