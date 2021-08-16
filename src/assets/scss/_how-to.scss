@@ -14,7 +14,8 @@
     }
 
     &__box circle,
-    &__box text {
+    &__box text,
+    &__box foreignObject {
         transition: all .5s;
         -webkit-transition: all .5s;
         -moz-transition: all .5s;
@@ -30,12 +31,13 @@
 
     &__box g:hover text{
         fill: blue;
-        font-size: 36px;
+        font-size: 28px;
     }
 
-
-
-
+    &__box g:hover foreignObject{
+        color: blue;
+        font-size: 28px;
+    }
 
 }
 

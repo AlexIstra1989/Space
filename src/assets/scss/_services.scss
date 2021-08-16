@@ -1,0 +1,63 @@
+.services {
+    padding-bottom: 200px;
+
+    &__title {
+        width: 600px;
+        padding-bottom: 100px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box-list {
+       
+    }
+
+    &__list-title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        font-size: 24px;
+        line-height: 29px;
+        position: relative;
+        &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../images/ellipse.jpg");
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        left: -30px;
+        top: 5px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        }
+    }
+    
+    &__text {
+        font-size: 12px;
+        line-height: 14px;          
+        color: #E5E5E5;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        &::before {
+
+        }
+    }
+
+    &__btn {
+        margin-bottom: 50px;
+    }
+
+
+}
