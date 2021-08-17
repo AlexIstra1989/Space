@@ -48,15 +48,23 @@
     }
 
     &__buttons {
-        display: flex;
+        display: flex;  
         flex-direction: column;
+        position: relative;
         &::before {
-
+            position: absolute;
+            content: "";
+            background-image: url("../images/service-img.png");
+            width: 192px;
+            height: 150px;
+            right: 0;
+            top: -128px;
         }
     }
 
     &__btn {
         margin-bottom: 50px;
+        width: 500px;
     }
 
 

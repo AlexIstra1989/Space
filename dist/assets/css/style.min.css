@@ -399,8 +399,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #E5E5E5; }
   .services__buttons {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative; }
+    .services__buttons::before {
+      position: absolute;
+      content: "";
+      background-image: url("../images/service-img.png");
+      width: 192px;
+      height: 150px;
+      right: 0;
+      top: -128px; }
   .services__btn {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    width: 500px; }
 
 /*# sourceMappingURL=style.min.css.map */
