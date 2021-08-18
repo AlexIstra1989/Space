@@ -9,10 +9,11 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__box-list {
-       
+        width: 620px;
     }
 
     &__list-title {
@@ -21,19 +22,24 @@
         margin-bottom: 25px;
     }
 
+    &__list {
+        margin-bottom: 25px;
+    }
+
     &__item {
         font-size: 24px;
         line-height: 29px;
+        padding-left: 36px;
         position: relative;
         &::before {
         position: absolute;
         content: "";
-        background-image: url("../images/ellipse.jpg");
+        background-color: #fff;
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        left: -30px;
-        top: 5px;
+        left: 0;
+        top: 4px;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -50,6 +56,15 @@
     &__buttons {
         display: flex;  
         flex-direction: column;
+        
+    }
+
+    &__btn {
+        width: 500px;
+    }
+
+    &__btn--first {
+        margin-bottom: 50px;
         position: relative;
         &::before {
             position: absolute;
@@ -58,13 +73,8 @@
             width: 192px;
             height: 150px;
             right: 0;
-            top: -128px;
+            bottom: 40px;
         }
-    }
-
-    &__btn {
-        margin-bottom: 50px;
-        width: 500px;
     }
 
 

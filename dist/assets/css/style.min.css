@@ -371,24 +371,30 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 100px; }
   .services__inner {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .services__box-list {
+    width: 620px; }
   .services__list-title {
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 25px; }
+  .services__list {
+    margin-bottom: 25px; }
   .services__item {
     font-size: 24px;
     line-height: 29px;
+    padding-left: 36px;
     position: relative; }
     .services__item::before {
       position: absolute;
       content: "";
-      background-image: url("../images/ellipse.jpg");
+      background-color: #fff;
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      left: -30px;
-      top: 5px;
+      left: 0;
+      top: 4px;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
@@ -399,18 +405,30 @@ h1, h2, h3, h4, h5, h6 {
     color: #E5E5E5; }
   .services__buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; }
+  .services__btn {
+    width: 500px; }
+  .services__btn--first {
+    margin-bottom: 50px;
     position: relative; }
-    .services__buttons::before {
+    .services__btn--first::before {
       position: absolute;
       content: "";
       background-image: url("../images/service-img.png");
       width: 192px;
       height: 150px;
       right: 0;
-      top: -128px; }
-  .services__btn {
-    margin-bottom: 50px;
-    width: 500px; }
+      bottom: 40px; }
+
+.slider {
+  text-align: center; }
+  .slider__inner {
+    border: 1px solid #fff;
+    padding: 100px 0;
+    margin-bottom: 50px; }
+  .slider__description {
+    font-family: 'spaceagecyrillic';
+    font-size: 24px;
+    line-height: 30px; }
 
 /*# sourceMappingURL=style.min.css.map */
