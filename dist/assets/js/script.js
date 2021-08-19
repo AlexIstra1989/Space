@@ -2,8 +2,17 @@ function test(a, b) {
     return a + b
 }
 
-console.log(test(5, 2));
-console.log(test(2, 4));
-console.log(test(9, 1));
 
+
+ 
+  $(document).ready(function(){
+
+    $('.slider__box').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    });
+});
 //# sourceMappingURL=script.js.map

@@ -1,0 +1,34 @@
+.footer {
+    background-image: url("../images/footer-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0 150px;
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__box {
+        width: 165px;
+    }
+
+    &__text {
+        margin-right: 50px;
+    }
+
+    &__text p + p {
+        margin-top: 50px;
+    }
+
+    &__menu {
+        width: 100px;
+    }
+
+    &__contacts {
+        width: 165px;
+    }
+
+
+
+}
