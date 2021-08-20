@@ -9,26 +9,38 @@
         justify-content: flex-end;
     }
 
-    &__box {
-        width: 165px;
-    }
-
     &__text {
         margin-right: 50px;
-    }
-
-    &__text p + p {
-        margin-top: 50px;
+        &:first-child {
+        margin-bottom: 50px;
+        }
     }
 
     &__menu {
-        width: 100px;
+        width: 120px;
+        margin-right: 95px;
     }
 
     &__contacts {
         width: 165px;
     }
 
+    &__menu-item,
+    &__contacts-item {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
 
+    &__menu-link,
+    &__contacts-link {
+        transition: color .5s;
+        -webkit-transition: color .5s;
+        -moz-transition: color .5s;
+        -ms-transition: color .5s;
+        -o-transition: color .5s;
+        &:hover {
+            color: #CB0E0E;
+        }
+    }
 
 }

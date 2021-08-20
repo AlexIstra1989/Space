@@ -92,11 +92,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 48px;
   font-weight: 400; }
 
-.title {
-  font-family: "spaceagecyrillic";
-  font-size: 48px;
-  line-height: 48px;
-  font-weight: 400; }
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto; }
 
 .btn {
   font-size: 18px;
@@ -167,10 +166,13 @@ h1, h2, h3, h4, h5, h6 {
     .header__description-text:last-child {
       margin-right: 0; }
 
-.conteiner {
-  max-width: 1220px;
-  padding: 0 10px;
-  margin: 0 auto; }
+.menu__btn-burger {
+  display: none;
+  position: relative;
+  z-index: 22; }
+
+.menu__icon-burger {
+  width: 45px; }
 
 .menu__list {
   display: flex; }
@@ -481,15 +483,61 @@ h1, h2, h3, h4, h5, h6 {
   .footer__inner {
     display: flex;
     justify-content: flex-end; }
-  .footer__box {
-    width: 165px; }
   .footer__text {
     margin-right: 50px; }
-  .footer__text p + p {
-    margin-top: 50px; }
+    .footer__text:first-child {
+      margin-bottom: 50px; }
   .footer__menu {
-    width: 100px; }
+    width: 120px;
+    margin-right: 95px; }
   .footer__contacts {
     width: 165px; }
+  .footer__menu-item, .footer__contacts-item {
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .footer__menu-link, .footer__contacts-link {
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s; }
+    .footer__menu-link:hover, .footer__contacts-link:hover {
+      color: #CB0E0E; }
+
+@media (max-width: 1024px) {
+  .header__btn-menu {
+    margin-right: 0; } }
+
+@media (max-width: 895px) {
+  .header__top {
+    padding-top: 30px; }
+  .header__btn-burger {
+    display: block; }
+  .menu__list {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #010203;
+    padding: 80px 0 20px;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%); }
+    .menu__list__.active {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0); }
+  .menu__item {
+    margin: 0;
+    padding: 15px 0; }
+  .menu__item-link {
+    display: block; } }
 
 /*# sourceMappingURL=style.min.css.map */

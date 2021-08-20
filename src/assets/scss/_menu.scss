@@ -1,4 +1,14 @@
 .menu {
+    &__btn-burger {
+        display: none;
+        position: relative;
+        z-index: 22;
+    }
+    
+    &__icon-burger {
+        width: 45px;
+    }
+
     &__list {
         display: flex;
     }
