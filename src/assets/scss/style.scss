@@ -38,6 +38,8 @@ a{font-family: inherit; color: inherit; font-size: inherit;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
+@import "./library/slick";
+
 @import "./fonts";
 @import "./title";
 @import "./container";

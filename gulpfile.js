@@ -61,9 +61,8 @@ const jsFiles = [
 ]
 
 const jsLibFiles = [
-    srcPath + 'assets/js/library/test.js',
     srcPath + 'assets/js/library/slick.min.js',
-    srcPath + 'assets/js/library/jquery.fancybox.min.js'
+    
 ]
 
 
@@ -185,15 +184,7 @@ function js(cb) {
 function jsLibrary(cb) {
     return src(jsLibFiles)
         .pipe(sourcemaps.init())
-        .pipe(plumber({
-            errorHandler : function(err) {
-                notify.onError({
-                    title:    "JS Error",
-                    message:  "Error: <%= error.message %>"
-                })(err);
-                this.emit('end');
-            }
-        }))
+        .pipe(plumber())
         .pipe(concat('lib.js'))
         .pipe(uglify({ 
             toplevel: true
