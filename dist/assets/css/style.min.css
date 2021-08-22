@@ -594,6 +594,29 @@ h1, h2, h3, h4, h5, h6 {
     .footer__menu-link:hover, .footer__contacts-link:hover {
       color: #CB0E0E; }
 
+@media (max-width: 1136px) {
+  .about__title, .about__box-subtitle {
+    text-align: center; }
+  .about__img, .about__box {
+    margin: 0 auto; }
+  .about__box {
+    margin-top: 40px; }
+  .about__box-title {
+    text-align: center; }
+  .about__btn {
+    display: block;
+    margin: 0 auto; }
+  .to-book__box {
+    padding-top: 50%; }
+  .how-to__title {
+    margin: 0 auto; }
+  .how-to__box {
+    text-align: end; }
+  .offer__title {
+    margin: 0 auto; }
+  .services__title {
+    margin: 0 auto; } }
+
 @media (max-width: 1024px) {
   .header__btn-menu {
     margin-right: 0; } }
