@@ -1,4 +1,5 @@
 
+
   $(document).ready(function(){
 
     $('.slider__box').slick({
@@ -9,6 +10,8 @@
     adaptiveHeight: true,
       });
 }); 
+
+
 
 $(function(){
 $('.menu__btn-burger').document('click',function(){
