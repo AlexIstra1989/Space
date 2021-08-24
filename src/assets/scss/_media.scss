@@ -1,12 +1,11 @@
 @media (max-width: 1160px) {
     .about {
+        text-align: center;
         &__title {
             text-align: center;
         }
         &__content {
             display: block;
-            text-align: center;
-            margin-bottom: 40px;
         }
 
         &__img {
@@ -14,7 +13,28 @@
         }
 
         &__box {
-            margin: 0 auto;
+            width: 100%;
+        }
+
+        &__description {
+            display: block;
+        }
+
+        &__description-text {
+            width: 100%;
+            font-size: 20px;
+            line-height: 20px;
+            &:nth-child(-n+2) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__table {
+            width: 100%;
+        }
+
+        &__note {
+            font-size: 17px;
         }
     }
 }
@@ -28,8 +48,6 @@
         }
     }
     
-    
-
     .to-book {
         &__box {
             padding-top: 20%;
@@ -146,7 +164,7 @@
         &__description {
             justify-content: center;
         }
-}
+    }
 
     .menu {
         &__btn-burger {
@@ -187,8 +205,55 @@
             display: block;
         }
     }
+
+    .how-to {
+        padding: 0;
+        &__title {
+            margin-bottom: 50px;
+        }
+        &__box svg{
+            display: none;
+        }
+
+        &__box-list {
+            display: block;
+        }
+
+        &__box-item {
+            font-size: 20px;
+            padding-bottom: 20px;
+            text-align: left;
+            padding-left: 20px;
+            margin-left: 20px;
+            position: relative;
+            border-left: 1px solid #fff;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -10px;
+                top: 0;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background-color: #fff;
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+        
+    }
+}
     
-    @media (max-width: 632px) {
+    @media (max-width: 640px) {
+        .title {
+            font-size: 38px;
+            line-height: 38px;
+        }
         .header {
             &__title {
                 font-size: 50px;
@@ -199,9 +264,17 @@
         }
 
         .about {
+            &__title {
+                padding: 50px;
+            }
             &__content {
                 margin-bottom: 0;
+                padding-bottom: 70px;
             }
+            &__box-subtitle {
+                font-size: 16px;
+            }
+
             &__description {
                 display: block;
             }
@@ -212,7 +285,36 @@
                 font-size: 20px;
                 margin-bottom: 15px;
             }
+
+            &__table-tr {
+                &:first-child {
+                    display: none;
+                }
+            }
+
+            &__table-tr + &__table-tr {
+                font-size: 20px;
+            }
+
+            &__table-td {
+                display: block;
+                text-align: right;
+                border: 1px solid #fff;
+                &::before {
+                content: attr(aria-label);
+                float: left;
+                padding-left: 20px;
+                }
+                span {
+                    display: inline-block;
+                }
+            }
+
+
+
+
+                
         }
-    }
-    
 }
+    
+    
