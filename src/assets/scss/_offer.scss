@@ -19,10 +19,11 @@
         border: 1px solid #fff;
         margin-bottom: 25px;
         padding: 40px 75px;
+        min-height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-height: 400px;
+        text-align: center;
     }
 
     &__text {
