@@ -1,4 +1,17 @@
 @media (max-width: 1160px) {
+    .header {
+        &__description-text {
+            font-size: 20px;
+            line-height: 20px;
+            max-width: 100%;
+            margin-right: 0;
+            text-align: center;
+            &:first-child {
+                margin-bottom: 40px;
+            }
+        }
+    }
+        
     .about {
         text-align: center;
         &__title {
@@ -40,12 +53,7 @@
 }
 
 @media (max-width: 1136px) {
-    .header {
-        &__content,
-        &__description {
-            margin: 0 auto;
-        }
-    }
+    
 
     .how-to {
         &__title {
@@ -133,6 +141,11 @@
         }
     }
 
+    .contacts {
+        &__btn {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 @media (max-width: 1036px) {
@@ -146,36 +159,37 @@
             margin-bottom: 40px;
         }
     }
-
-    .contacts {
-        &__inner {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__btn {
-            margin-bottom: 30px;
-        }
-    }
 }
 
-
-@media (max-width: 895px) {
+@media (max-width: 896px) {
     .header {
         &__top {
-            padding-top: 30px;
+            padding: 30px 0 110px;
         }
         
         &__btn-burger {
         display: block;
         } 
 
+        &__link-phone {
+            font-size: 18px;
+        }
+
+        &__inner {
+            display: block;
+        }  
+        
         &__content {
             margin: 0 auto;
         }
 
+        &__btn {
+            margin-bottom: 125px;
+        }
+
         &__description {
-            justify-content: center;
+            display: block;
+            margin: 0;
         }
     }
 
@@ -293,13 +307,35 @@
     .title {
         font-size: 38px;
         line-height: 38px;
+        width: 100%;
     }
+
+    .text {
+        font-size: 14px;
+    }
+
     .header {
+        background-position: right;
+
+        &__content {
+            text-align: center;
+        }
+
         &__title {
         font-size: 50px;
         }
+        
         &__span {
             font-size: 100px;
+            line-height: 100px;
+        }
+
+        &__wrap {
+            display: block;
+        }
+
+        &__description-text {
+            font-size: 14px;
         }
     }
 
@@ -320,9 +356,8 @@
         }
 
         &__description-text {
-            width: 460px;
+            width: 100%;
             margin: 0 auto;
-            font-size: 20px;
             margin-bottom: 15px;
         }
 
@@ -333,7 +368,7 @@
         }
 
         &__table-tr + &__table-tr {
-            font-size: 20px;
+            font-size: 17px;
         }
 
         &__table-td {
@@ -355,8 +390,14 @@
         background-position: left;
     }
 
-    .footer {
+    .contacts {
+        &__text {
+            width: 100%;
+        }
 
+        &__img {
+            max-width: 100%;
+        }
     }
 }
 
@@ -366,25 +407,136 @@
         line-height: 30px;
     }
 
+    .header {
+        &__title {
+            font-size: 40px;
+            line-height: 20px;
+        }
+
+        &__span {
+            font-size: 80px;
+            line-height: 80px;
+        }
+    }
+
+    .how-to {
+        &__box-item {
+            font-size: 18px;
+        }
+    }
+
     .offer {
         padding-bottom: 60px;
-        .offer__price-new {
+        &__price-new {
             font-size: 40px;
             line-height: 50px;
         }
     }
     .services {
         .services__title {
-            width: 545px;
+            width: 100%;
             padding-bottom: 50px;
         }       
     }
 
-    .footer__menu {
-        width: 120px;
-        margin-right: 20px;
+    .contacts {
+        &__wrap {
+            width: 100%;
+        }
     }
 
+    .footer {
+        text-align: center;
+        padding: 50px 0 50px;
+        
+        &__inner {
+            display: block;
+        }
+
+        &__text {
+            width: 100%;
+            margin: 0 0 30px;
+            &:first-child {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__menu {
+            margin-bottom: 30px;
+        }
+
+        &__menu,
+        &__links {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
 }
     
-    
+@media (max-width: 470px) {
+    .title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .header {
+        &__top {
+            padding: 30px 0 40px;
+        }
+
+        &__title {
+            font-size: 35px;
+        }
+
+        &__span {
+            font-size: 65px;
+            line-height: 65px;
+        }
+
+        &__wrap-text {
+            font-size: 22px;
+        }
+
+        &__btn {
+            margin-bottom: 50px;
+        }
+    }
+
+    .offer {
+        &__text {
+            font-size: 16px;
+            line-height: 21px;
+            width: 100%;
+        }
+
+        &__price-new {
+            font-size: 23px;
+        }
+    }
+
+    .services {
+        &__list-title {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        &__item {
+            font-size: 18px;
+            line-height: 35px;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .header {
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        &__span {
+            font-size: 55px;
+            line-height: 55px;
+        }
+    }
+}
