@@ -61,7 +61,7 @@ const jsFiles = [
 ]
 
 const jsLibFiles = [
-    srcPath + 'assets/js/library/slick.min.js',
+    srcPath + 'assets/js/library/slick.min.js'
     
 ]
 

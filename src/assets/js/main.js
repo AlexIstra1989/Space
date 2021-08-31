@@ -1,16 +1,8 @@
+console.log('new');
 
-
-  $(document).ready(function(){
-
-    $('.slider__box').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-      });
-}); 
-
+$(document).ready(function(){
+  $('.slider__box').slick();
+});
 
 
 $(function(){
